@@ -7,6 +7,9 @@ import HomeInfo from "./HomeInfo";
 import Hero from './Hero';
 import Shapes from './Shape';
 import {DemoBook} from './Book';
+import CandyGame from './CandyGame'
+import LinkButton from './LinkButton'
+import RunnerGame from './RunnerGame'
 
 export {
     CTA,
@@ -17,5 +20,8 @@ export {
     HomeInfo,
     Hero,
     Shapes,
-    DemoBook
+    DemoBook,
+    CandyGame,
+    LinkButton,
+    RunnerGame
 }

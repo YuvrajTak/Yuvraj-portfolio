@@ -27,6 +27,10 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import aws from './aws.svg'
+import demo from './demo.jpg'
+import project from './project.png'
+import candyLogo from './candyLogo.png'
+import subway from './subway.png'
 
 export {
     css,
@@ -57,5 +61,9 @@ export {
     contact,
     soundon,
     soundoff,
-    aws
+    aws,
+    demo,
+    project,
+    candyLogo,
+    subway
 }

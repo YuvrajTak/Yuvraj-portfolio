@@ -92,8 +92,8 @@ const About = () => {
           </div>
 
         </div> */}
-        <div className='absolute top-2 left-40 right-16 z-10 flex items-center justify-center'>
-          <div className='flex flex-col' style={{paddingTop: '10rem', paddingRight: '10rem',    paddingLeft: '10rem'}}>
+        <div className='absolute flex items-center justify-center mt-10 mr-4 ml-14 md:ml-40 lg:mt-8 lg:ml-40 lg:mr-16 z-10'>
+          <div className='flex flex-col sm:pt-4 sm:pl-1 sm:pr-1 lg:pt-28 lg:pl-40 lg:pr-40 '>
             <h3 className='subhead-text'>My Skills</h3>
 
             <div className='mt-16 flex flex-wrap gap-12'>

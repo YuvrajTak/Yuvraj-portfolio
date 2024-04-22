@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla,squareBits,circulants } from "../assets/images";
+import { console, shopify, starbucks, tesla,squareBits,circulants } from "../assets/images";
 import {
     car,
     contact,
@@ -137,36 +137,35 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developing and maintaining web applications using Node js, Express Js, MongoDB and other related technologies.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Acquired foundational knowledge of software development principles, tools like Git version control, and techniques through training programs, mentorship, and on-the-job learning",
         ],
     },
+    // {
+    //     title: "Web Developer",
+    //     company_name: "Shopify",
+    //     icon: shopify,
+    //     iconBg: "#b7e4c7",
+    //     date: "Jan 2022 - Jan 2023",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Freelance & Fun Developer",
+        company_name: "",
+        icon: console,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "July 2018 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Design, Develop and Publish 10+ projects on Google Play Store.",
+            "Implementing cross platformer application and ensuring compatibility with each platformer.",
+            "Publish Game 'Draw Rider Free' on google play store with 12k+ download",
         ],
     },
 ];

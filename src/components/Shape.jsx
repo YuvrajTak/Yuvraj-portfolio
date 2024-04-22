@@ -118,14 +118,21 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
     gsap.utils.random(soundEffects).play();
 
     gsap.to(mesh.rotation, {
-      x: `+=${gsap.utils.random(0, 2)}`,
-      y: `+=${gsap.utils.random(0, 2)}`,
-      z: `+=${gsap.utils.random(0, 2)}`,
+      x: `+=${gsap.utils.random(-10, 10)}`,
+      y: `+=${gsap.utils.random(-10, 10)}`,
+      z: `+=${gsap.utils.random(-10, 10)}`,
       duration: 1.3,
-      ease: "elastic.out(1,0.3)",
+      ease: "elastic.out(1,0.9)",
       yoyo: true,
     });
-
+    gsap.to(mesh.position, {
+      x: `+=${gsap.utils.random(-1, 1)}`,
+      y: `+=${gsap.utils.random(-1, 1)}`,
+      z: `+=${gsap.utils.random(-1, 1)}`,
+      duration: 1.3,
+      ease: "elastic.out(1,0.9)",
+      yoyo: true,
+    });
     mesh.material = getRandomMaterial();
   }
 

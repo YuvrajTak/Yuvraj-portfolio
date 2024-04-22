@@ -1,10 +1,11 @@
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useRef, useState,useEffect } from "react";
 
 import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
+import { react } from "../assets/icons";
 
 const Contact = () => {
   const formRef = useRef();
@@ -12,7 +13,7 @@ const Contact = () => {
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
-
+  const canvasRef = useRef(null)
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
@@ -71,7 +72,9 @@ const Contact = () => {
       );
   };
 
+
   return (
+    <>
     <section className='relative flex lg:flex-row flex-col max-container'>
       {alert.show && <Alert {...alert} />}
 
@@ -89,7 +92,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='John'
+              placeholder='Your Name'
               required
               value={form.name}
               onChange={handleChange}
@@ -103,7 +106,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='John@gmail.com'
+              placeholder='abc@email.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -132,13 +135,17 @@ const Contact = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
-            {loading ? "Sending..." : "Submit"}
+            {loading ? "Sending..." : "Fill & Submit to Run the Fox"}
           </button>
         </form>
       </div>
+  
 
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+     
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px] -z-10'>
+ 
         <Canvas
+          ref={canvasRef}
           camera={{
             position: [0, 0, 5],
             fov: 75,
@@ -167,6 +174,8 @@ const Contact = () => {
         </Canvas>
       </div>
     </section>
+   
+    </>
   );
 };
 

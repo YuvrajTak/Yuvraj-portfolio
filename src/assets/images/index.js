@@ -7,6 +7,11 @@ import logo from './logo.svg'
 import squareBits from './Square_bits.jfif'
 import circulants from './circulants.jpg'
 import sky from './sky.jpg'
+import heros from './heroDemo.png'
+import dark from './dark01.jpg'
+import page from './background.jpg'
+import console from './console.png'
+
 export {
     hero,
     meta,
@@ -16,5 +21,9 @@ export {
     logo,
     squareBits,
     circulants,
-    sky
+    sky,
+    heros,
+    dark,
+    page,
+    console
 }

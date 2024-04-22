@@ -1,16 +1,28 @@
-.page {
+/* .page {
      background-image: url('https://images.unsplash.com/photo-1603513492128-ba7bc9b3e143?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80');
     border: 1px solid rgb(0, 0, 0);
-      /* border-radius: 0.5rem; */
+      border-radius: 0.5rem; 
       box-sizing: border-box;
       box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+  } */
+  @font-face {
+    font-family: "Agustina Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Agustina Regular"),
+      url("../assets/Agustina.woff") format("woff");
+    font-display: swap;
   }
   
-  .container-md{
-    width:600px;
+  .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .page-cover{
-  background-image: url('https://nodlik.github.io/StPageFlip/images/background.jpg');
+  background-image: url('../assets/images/background.jpg');
    background-size: cover;
   }
   
@@ -25,4 +37,240 @@
   .page-cover {
     color: hsl(35, 35, 35);
     border: solid 2px hsl(35, 20, 50);
+    box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
   }
+
+  .page-header {
+    height: 30px;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .page-image {
+    height: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .page-text {
+    height: 100%;
+    flex-grow: 1;
+    font-size: 80%;
+    text-align: justify;
+    margin-top: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: solid 1px #f4e8d7;
+  }
+
+  .page-footer {
+    height: 30px;
+    border-top: solid 1px #f4e8d7;
+    font-size: 80%;
+    color: #998466;
+  }
+
+  .page-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .--left {
+    border-right: 0;
+    box-shadow: inset -7px -7px 30px -7px rgba(0,0,0,0.4);
+}
+.--right {
+  border-left: 0;
+  box-shadow: inset 7px -7px 30px -7px rgba(0,0,0,0.4);
+}
+.--outer {
+ 
+  box-shadow: inset -7px -7px -30px -7px rgba(0,0,0,0.4);
+}
+
+.stf__item {
+  display: none;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+/* .page {
+  padding: 20px;
+  background-color: #fdfaf7;
+  color: #785e3a;
+  border: solid 1px #c2b5a3;
+  overflow: hidden;
+} */
+
+.album-web {
+  /* background: rgb(255, 251, 251); */
+  text-align: center;
+}
+
+.page {
+  box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+}
+
+/* Style the rainbow text element. */
+.rainbow-text {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+/* Add animation on hover. */
+.rainbow-text:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
+
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(217, 210, 210, 0.445);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+.splash-animation-container {
+  height: 50vh;
+}
+
+.splash-title-container {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.splash-title {
+  font-family: "Agustina Regular", cursive;
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 20px;
+}
