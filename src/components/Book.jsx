@@ -105,7 +105,7 @@ function DemoBook(props) {
           </Page>
           <Page image={subway} number={5} header='Subway Runner'>
             <div className='flex  justify-center'>
-              <Link to="/runner-game" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-md text-white font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:bg-gradient-to-l">
+              <Link to="/runnergame" className="px-4 py-2 rounded-md text-white font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:bg-gradient-to-l">
                 <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 0 1 .174 2.495M17 16a4 4 0 0 1 2.495 .174M17 8a4 4 0 0 1-.174 2.495M7 8a4 4 0 0 1-2.495-.174"></path></svg>
                 Live WEB Magic Demo
               </Link>
@@ -123,15 +123,15 @@ function DemoBook(props) {
   
            
             <p className='m-4 leading-relaxed rainbow-text'>
-            -Developed a multilingual childcare application targeting parents in Irish, English, and Arbic language.<br/>
-          -Integrated Google Language API to enable real-time translation of service descriptions into Irish, English (UK dialect), and Arabic for the targeted regions.<br/>
-          -Implemented an interactive text editor for creating childcare service descriptions.
+              -Developed a multilingual childcare application targeting parents in Irish, English, and Arbic language.<br/>
+              -Integrated Google Language API to enable real-time translation of service descriptions into Irish, English (UK dialect), and Arabic for the targeted regions.<br/>
+              -Implemented an interactive text editor for creating childcare service descriptions.
             </p>
           
           </Page>
           <Page image={candyLogo} number={3} header='Angry Birds Blast'>
             <div className='flex  justify-center'>
-              <Link to="/candy-game" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-md text-white font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:bg-gradient-to-l">
+              <Link to="/candygame" className="px-4 py-2 rounded-md text-white font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:bg-gradient-to-l">
                 <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 0 1 .174 2.495M17 16a4 4 0 0 1 2.495 .174M17 8a4 4 0 0 1-.174 2.495M7 8a4 4 0 0 1-2.495-.174"></path></svg>
                 Live Magic Demo
               </Link>

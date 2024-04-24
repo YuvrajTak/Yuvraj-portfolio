@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import CandyGamePage from "./CandyGamePage";
 import RunnerGamePage from "./RunnerGamePage";
-
+import Test from "./Test";
 
 export {
     Home,
@@ -12,5 +12,6 @@ export {
     Projects,
     Contact,
     CandyGamePage,
-    RunnerGamePage
+    RunnerGamePage,
+    Test
 }

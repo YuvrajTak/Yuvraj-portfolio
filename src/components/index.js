@@ -10,6 +10,7 @@ import {DemoBook} from './Book';
 import CandyGame from './CandyGame'
 import LinkButton from './LinkButton'
 import RunnerGame from './RunnerGame'
+import ProgressBar from './ProgressBar'
 
 export {
     CTA,
@@ -23,5 +24,6 @@ export {
     DemoBook,
     CandyGame,
     LinkButton,
-    RunnerGame
+    RunnerGame,
+    ProgressBar
 }

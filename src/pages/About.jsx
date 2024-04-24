@@ -170,7 +170,8 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in India, specializing in building and maintaining Web applications.
+          Software Engineer based in India, specializing in building and maintaining and publishing
+           Web applications since 2018.
         </p>
       </div>
 

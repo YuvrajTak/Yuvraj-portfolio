@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { Footer, Navbar } from "./components";
-import { About, Contact, Home, Projects,CandyGamePage,RunnerGamePage } from "./pages";
+import { About, Contact, Home, Projects,CandyGamePage,RunnerGamePage,Test } from "./pages";
 
 const App = () => {
   return (
@@ -18,8 +18,8 @@ const App = () => {
                   <Route path='/about' element={<About />} />
                   <Route path='/projects' element={<Projects />} />
                   <Route path='/contact' element={<Contact />} />
-                  <Route path='/candy-game' element={<CandyGamePage />} />
-                  <Route path='/runner-game' element={<RunnerGamePage />} />
+                  <Route path='/candygame' element={<CandyGamePage />} /> 
+                  <Route path='/runnergame' element={<RunnerGamePage />} />
                 </Routes>
                 <Footer />
               </>

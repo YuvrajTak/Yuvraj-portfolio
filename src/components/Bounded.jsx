@@ -5,9 +5,7 @@ import clsx from "clsx";
 
 const Bounded = forwardRef(({ as: Comp = "section", className, children, ...restProps }, ref) => 
 {
-    console.log("as", Comp,)
-    console.log(" className",  className)
-    console.log("child----------Children", children)
+
     return (
       <Comp
         ref={ref}
